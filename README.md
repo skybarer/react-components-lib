@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### `npm publish tutorial`
+how to create a reatct component and publish to npm site : [https://fathomtech.io/blog/create-a-react-component-library-using-create-react-app/](https://fathomtech.io/blog/create-a-react-component-library-using-create-react-app/)
