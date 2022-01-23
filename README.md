@@ -73,3 +73,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### `npm publish tutorial`
 how to create a reatct component and publish to npm site : [https://fathomtech.io/blog/create-a-react-component-library-using-create-react-app/](https://fathomtech.io/blog/create-a-react-component-library-using-create-react-app/)
+
+https://stackblitz.com/edit/storybook-kitchen-sink
