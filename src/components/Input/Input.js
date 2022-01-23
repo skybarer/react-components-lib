@@ -4,7 +4,7 @@ import { TextFieldProps } from './index.d';
 
 // https://github.com/iiison/react-form
 
-const Input: React.FC<TextFieldProps> = (
+const Input = (
     {
         id = 'input-1',
         type = 'text',
