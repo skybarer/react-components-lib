@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { TextFieldProps } from './index.d';
 
 // https://github.com/iiison/react-form
 
