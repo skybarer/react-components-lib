@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# A basic componet library for React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
