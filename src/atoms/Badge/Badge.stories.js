@@ -1,5 +1,5 @@
 import React from 'react';
-import Badge from './Badge';
+import { Badge } from './Badge';
 import {
   Title,
   Subtitle,
@@ -39,13 +39,12 @@ const Template = (args) => <Badge {...args} />;
 export const Basic = Template.bind({});
 Basic.parameters = {
   layout: 'centered',
-  // docs: {
-  //   page: null,
-  // },
 };
 
 Basic.args = {
-  label: 'Badge',
-  backgroundColor: 'aliceblue',
-  color: '#000000'
+  content: '51+',
+  backgroundColor: '#32c766',
+  color: 'black',
+  padding: '2px 6px',
+  borderRadius: '1.5em'
 };

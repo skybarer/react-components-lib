@@ -1,18 +1,33 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Badge({ label = 'button', backgroundColor, onClick }) {
+// https://staxmanade.com/CssToReact/
+
+export const Badge = ({
+  content = '5',
+  backgroundColor = 'aliceblue',
+  borderRadius = '10px',
+  color = 'black',
+  padding
+}) => {
   return (
-    <button onClick={onClick} style={{ backgroundColor, border: 'none', padding: '0.7rem', borderRadius: '4px' }}>
-      {label}
-    </button>
+    <span
+      style={{
+        backgroundColor,
+        borderRadius,
+        padding,
+        color,
+        textAlign: 'center',
+        fontSize: 'small'
+      }}
+    >
+      {content}
+    </span>
   );
 }
 
 Badge.propTypes = {
-  backgroundColor: PropTypes.string,
-  label: PropTypes.string.isRequired,
-  onClick: PropTypes.func,
+  content: PropTypes.string.isRequired,
 };
 
 Badge.defaultProps = {
