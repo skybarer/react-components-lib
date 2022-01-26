@@ -1,5 +1,5 @@
 import React from 'react';
-import {Alerts} from './Alerts';
+import { Alerts } from './Alerts';
 import {
   Title,
   Subtitle,
@@ -38,10 +38,7 @@ const Template = (args) => <Alerts {...args} />;
 
 export const Basic = Template.bind({});
 Basic.parameters = {
-  layout: 'centered',
-  // docs: {
-  //   page: null,
-  // },
+
 };
 
 Basic.args = {

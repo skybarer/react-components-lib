@@ -14,8 +14,6 @@ export const Alerts = ({ label = 'Alerts', backgroundColor, onClick }) => {
           "marginBottom": "24px",
           "borderRadius": "4px",
           "border": "1px solid rgba(0,0,0,.1)",
-          "textAlign": "center",
-          "width": '100%'
         }
       }>
       {label}
