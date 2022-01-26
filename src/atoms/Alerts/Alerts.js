@@ -1,11 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Alerts({ label = 'button', backgroundColor, onClick }) {
+export const Alerts = ({ label = 'Alerts', backgroundColor, onClick }) => {
   return (
-    <button onClick={onClick} style={{ backgroundColor, border: 'none', padding: '0.7rem', borderRadius: '4px' }}>
+    <div
+      style={
+        {
+          "background": "#E1FFD4",
+          "color": "#66BF3C",
+          "fontWeight": "700",
+          "fontSize": "14px",
+          "padding": "10px 20px",
+          "marginBottom": "24px",
+          "borderRadius": "4px",
+          "border": "1px solid rgba(0,0,0,.1)",
+          "textAlign": "center",
+          "width": '100%'
+        }
+      }>
       {label}
-    </button>
+    </div>
   );
 }
 
