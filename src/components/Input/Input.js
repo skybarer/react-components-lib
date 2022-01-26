@@ -56,12 +56,16 @@ const Input = (
 }
 
 Input.propTypes = {
-    backgroundColor: PropTypes.string,
+    id: PropTypes.string,
+    type: PropTypes.string,
+    defaultValue: PropTypes.string,
+    placeholder: PropTypes.string,
+    className: PropTypes.string,
+    style: PropTypes.object,
     onChange: PropTypes.func,
 };
 
 Input.defaultProps = {
-    backgroundColor: null,
     onChange: undefined,
 };
 
