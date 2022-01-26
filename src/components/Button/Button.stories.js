@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button';
+import {Button} from './Button';
 import {
   Title,
   Subtitle,
@@ -39,14 +39,13 @@ const Template = (args) => <Button {...args} />;
 export const Basic = Template.bind({});
 Basic.parameters = {
   layout: 'centered',
-  // docs: {
-  //   page: null,
-  // },
 };
 
 Basic.args = {
   label: 'My Button',
   backgroundColor: 'aliceblue',
-  color: '#000000'
+  color: '#000000',
+  borderRadius: '4px',
+  disabled: false
 };
 

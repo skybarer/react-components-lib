@@ -1,23 +1,43 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Button({ label = 'button', backgroundColor, onClick }) {
+export const Button = (
+  {
+    label = 'button',
+    backgroundColor = 'aliceblue',
+    onClick,
+    borderRadius = '4px',
+    disabled = false
+  }
+) => {
   return (
-    <button onClick={onClick} style={{ backgroundColor, border: 'none', padding: '0.7rem', borderRadius: '4px' }}>
+    <button
+      disabled={disabled}
+      onClick={onClick}
+      style={{
+        backgroundColor,
+        border: 'none',
+        padding: '0.7rem',
+        borderRadius
+      }}>
       {label}
     </button>
   );
 }
 
 Button.propTypes = {
+  label: PropTypes.string,
   backgroundColor: PropTypes.string,
-  label: PropTypes.string.isRequired,
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
   onClick: PropTypes.func,
+  borderRadius: PropTypes.string,
+  disabled: PropTypes.bool,
 };
 
 Button.defaultProps = {
   backgroundColor: null,
   onClick: undefined,
+  disabled: false
 };
 
 // {
