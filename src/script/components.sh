@@ -4,6 +4,7 @@
 #https://gist.github.com/GoodMattwin/eba19a6ec4fb2626e708e91aa534f9f2
 #https://react-bootstrap.github.io/components/alerts/
 
+# this should not be run multiple times otherwise files will be overridden
 
 #COMPONENT_PATH="C:\\Users\\inkol\\code\\react\\react-components-lib\\src\\components\\"
 
