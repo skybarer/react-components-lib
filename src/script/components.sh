@@ -8,7 +8,6 @@
 
 #COMPONENT_PATH="C:\\Users\\inkol\\code\\react\\react-components-lib\\src\\components\\"
 
-
 COMPONENT_ARRAY=(
   Alerts
   Accordion
@@ -43,14 +42,14 @@ COMPONENT_ARRAY=(
 
 for COMPONENT in ${COMPONENT_ARRAY[@]}; do
 
-COMPONENT_PATH="C:\\Users\\inkol\\code\\react\\react-components-lib\\src\\atoms\\"
-INDEX_JS_CONTENT="import $COMPONENT from './$COMPONENT';
+  COMPONENT_PATH="C:\\Users\\inkol\\code\\react\\react-components-lib\\src\\atoms\\"
+  INDEX_JS_CONTENT="import $COMPONENT from './$COMPONENT';
 
 export {
     $COMPONENT
 };"
-STORIES_CONTENT="import React from 'react';
-import $COMPONENT from './$COMPONENT';
+  STORIES_CONTENT="import React from 'react';
+import { $COMPONENT } from './$COMPONENT';
 import {
   Title,
   Subtitle,
@@ -90,9 +89,6 @@ const Template = (args) => <$COMPONENT {...args} />;
 export const Basic = Template.bind({});
 Basic.parameters = {
   layout: 'centered',
-  // docs: {
-  //   page: null,
-  // },
 };
 
 Basic.args = {
@@ -104,7 +100,7 @@ Basic.args = {
 COMPONENT_CONTENT="import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function $COMPONENT({ label = 'button', backgroundColor, onClick }) {
+export const $COMPONENT = ({ label = 'button', backgroundColor, onClick }) => {
   return (
     <button onClick={onClick} style={{ backgroundColor, border: 'none', padding: '0.7rem', borderRadius: '4px' }}>
       {label}
@@ -123,19 +119,18 @@ $COMPONENT.defaultProps = {
   onClick: undefined,
 };"
 
-    echo "Component Name : $COMPONENT"
-    echo "$COMPONENT_PATH$COMPONENT"
-    cd $COMPONENT_PATH
-    mkdir $COMPONENT
-    cd "$COMPONENT_PATH$COMPONENT"
-    touch $COMPONENT.js
-    touch $COMPONENT.stories.js
-    touch index.js
+  echo "Component Name : $COMPONENT"
+  echo "$COMPONENT_PATH$COMPONENT"
+  cd $COMPONENT_PATH
+  mkdir $COMPONENT
+  cd "$COMPONENT_PATH$COMPONENT"
+  touch $COMPONENT.js
+  touch $COMPONENT.stories.js
+  touch index.js
 
-    echo "$COMPONENT_CONTENT" >>$COMPONENT.js
-    echo "$STORIES_CONTENT" >>$COMPONENT.stories.js
-    echo "$INDEX_JS_CONTENT" >>index.js
+  echo "$COMPONENT_CONTENT" >>$COMPONENT.js
+  echo "$STORIES_CONTENT" >>$COMPONENT.stories.js
+  echo "$INDEX_JS_CONTENT" >>index.js
 done
-
 
 sleep 5s # Waits 5 seconds.
