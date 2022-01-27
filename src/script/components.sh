@@ -122,15 +122,16 @@ $COMPONENT.defaultProps = {
   echo "Component Name : $COMPONENT"
   echo "$COMPONENT_PATH$COMPONENT"
   cd $COMPONENT_PATH
-  mkdir $COMPONENT
+#  mkdir $COMPONENT
   cd "$COMPONENT_PATH$COMPONENT"
-  touch $COMPONENT.js
-  touch $COMPONENT.stories.js
-  touch index.js
+#  touch $COMPONENT.js
+#  touch $COMPONENT.stories.js
+#  touch index.js
+   touch $COMPONENT.css
 
-  echo "$COMPONENT_CONTENT" >>$COMPONENT.js
-  echo "$STORIES_CONTENT" >>$COMPONENT.stories.js
-  echo "$INDEX_JS_CONTENT" >>index.js
+#  echo "$COMPONENT_CONTENT" >>$COMPONENT.js
+#  echo "$STORIES_CONTENT" >>$COMPONENT.stories.js
+#  echo "$INDEX_JS_CONTENT" >>index.js
 done
 
 sleep 5s # Waits 5 seconds.
