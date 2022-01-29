@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export const Alerts = ({ label = 'Alerts', backgroundColor, onClick }) => {
-  return (
+  const [visible, setVisible] = React.useState(true);
+  const closeAlert = () => { setVisible(false) }
+  const alertHtml = (
     <div
       style={
         {
@@ -17,7 +19,19 @@ export const Alerts = ({ label = 'Alerts', backgroundColor, onClick }) => {
         }
       }>
       {label}
-    </div>
+      <span style={{
+        color: 'black',
+        display: 'inline-flex',
+        float: 'right',
+        border: '1px dotted red',
+        padding: '0 2px'
+      }} onClick={closeAlert}>X</span>
+    </div >
+  )
+  return (
+    <React.Fragment>
+      {visible ? alertHtml : null}
+    </React.Fragment>
   );
 }
 
