@@ -1,23 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 // https://github.com/iiison/react-form
+// https://academind.com/tutorials/reactjs-a-custom-useform-hook
+// https://react-hook-form.com/
 
 const Input = (
     {
         id = 'input-1',
         type = 'text',
-        defaultValue = 'akash',
+        value = 'akash',
         placeholder = 'Your username or email',
         className,
         style,
-        onChange
+        onChange,
+        ...props
     }) => {
 
-    onChange = (e) => {
-        this.defaultValue = e.target.value
-    }
+    const [inputValue, setInputValue] = useState(value);
 
+    const handleInputChange = (event) => {
+        if (event && event.target)
+            setInputValue(event.target.value)
+    }
 
     return (
         <input
@@ -25,10 +30,11 @@ const Input = (
             type={type}
             className={className}
             placeholder={placeholder}
-            onChange={({ target: { value } }) => onChange(value)}
+            onInput={handleInputChange}
+            onChange={onChange}
             aria-label="Your username or email"
             aria-invalid="false"
-            value={defaultValue}
+            value={inputValue}
             name="username"
             aria-required="true"
             aria-describedby="tooltip-input-1"

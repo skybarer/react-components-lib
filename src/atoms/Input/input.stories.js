@@ -33,8 +33,20 @@ export default {
     // onClick: { action: true },
   }
 };
+let value = 'akashdhar'
 
-const Template = (args) => <Input {...args} />;
+const handleChange = (event) => {
+  console.log('Input change event fired :', event)
+}
+
+const Template = (args) => (
+  <Input
+    {...args}
+    value={value}
+    onChange={handleChange}
+
+  />
+);
 
 export const Basic = Template.bind({});
 Basic.parameters = {
