@@ -30,7 +30,7 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-    // onClick: { action: true },
+    
   }
 };
 
@@ -39,9 +39,7 @@ const Template = (args) => <Carousel {...args} />;
 export const Basic = Template.bind({});
 Basic.parameters = {
   layout: 'centered',
-  // docs: {
-  //   page: null,
-  // },
+
 };
 
 Basic.args = {

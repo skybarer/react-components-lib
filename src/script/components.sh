@@ -80,7 +80,7 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-    // onClick: { action: true },
+    
   }
 };
 

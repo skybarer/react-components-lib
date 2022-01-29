@@ -1,5 +1,5 @@
 import React from 'react';
-import Accordion from './Accordion';
+import { Accordion } from './Accordion';
 import {
   Title,
   Subtitle,
@@ -30,7 +30,7 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-    // onClick: { action: true },
+    
   }
 };
 
@@ -39,12 +39,12 @@ const Template = (args) => <Accordion {...args} />;
 export const Basic = Template.bind({});
 Basic.parameters = {
   layout: 'centered',
-  // docs: {
-  //   page: null,
-  // },
+
 };
 
 Basic.args = {
+  title: 'title',
+  content: 'content',
   label: 'Accordion',
   backgroundColor: 'aliceblue',
   color: '#000000'
