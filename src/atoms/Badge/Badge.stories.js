@@ -43,7 +43,7 @@ Basic.parameters = {
 
 Basic.args = {
   content: '51+',
-  backgroundColor: '#32c766',
+  backgroundColor: 'aliceblue',
   color: 'black',
   padding: '2px 6px',
   borderRadius: '1.5em'
