@@ -1,11 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Accordion({ label = 'button', backgroundColor, onClick }) {
+export const Accordion = ({ title, content, backgroundColor, onClick }) => {
   return (
-    <button onClick={onClick} style={{ backgroundColor, border: 'none', padding: '0.7rem', borderRadius: '4px' }}>
-      {label}
-    </button>
+    <React.Fragment>
+      <div>
+        {title}
+      </div>
+      <div>
+        {content}
+      </div>
+    </React.Fragment>
   );
 }
 
