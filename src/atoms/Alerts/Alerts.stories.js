@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'components/Alerts/Basic',
+  title: 'atoms/Alerts/Basic',
   component: Alerts,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

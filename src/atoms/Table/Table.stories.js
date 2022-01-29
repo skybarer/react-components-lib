@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'components/Table/Basic',
+  title: 'atoms/Table/Basic',
   component: Table,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

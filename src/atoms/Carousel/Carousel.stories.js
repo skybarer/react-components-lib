@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'components/Carousel/Basic',
+  title: 'atoms/Carousel/Basic',
   component: Carousel,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

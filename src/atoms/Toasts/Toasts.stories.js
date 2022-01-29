@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'components/Toasts/Basic',
+  title: 'atoms/Toasts/Basic',
   component: Toasts,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

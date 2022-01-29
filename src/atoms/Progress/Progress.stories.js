@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'components/Progress/Basic',
+  title: 'atoms/Progress/Basic',
   component: Progress,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

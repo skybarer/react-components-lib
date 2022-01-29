@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'components/Modal/Basic',
+  title: 'atoms/Modal/Basic',
   component: Modal,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

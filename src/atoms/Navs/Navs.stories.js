@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'components/Navs/Basic',
+  title: 'atoms/Navs/Basic',
   component: Navs,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

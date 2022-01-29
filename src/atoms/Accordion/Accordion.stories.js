@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'components/Accordion/Basic',
+  title: 'atoms/Accordion/Basic',
   component: Accordion,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

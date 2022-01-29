@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'components/Breadcrumb/Basic',
+  title: 'atoms/Breadcrumb/Basic',
   component: Breadcrumb,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

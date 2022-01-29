@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'components/Offcanvas/Basic',
+  title: 'atoms/Offcanvas/Basic',
   component: Offcanvas,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'components/Figures/Basic',
+  title: 'atoms/Figures/Basic',
   component: Figures,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

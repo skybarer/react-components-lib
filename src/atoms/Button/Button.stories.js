@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button';
+import {Button} from './Button';
 import {
   Title,
   Subtitle,
@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'components/Button/Basic',
+  title: 'atoms/Button/Basic',
   component: Button,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },
@@ -39,13 +39,13 @@ const Template = (args) => <Button {...args} />;
 export const Basic = Template.bind({});
 Basic.parameters = {
   layout: 'centered',
-  // docs: {
-  //   page: null,
-  // },
 };
 
 Basic.args = {
-  label: 'Button',
+  label: 'My Button',
   backgroundColor: 'aliceblue',
-  color: '#000000'
+  color: '#000000',
+  borderRadius: '4px',
+  disabled: false
 };
+

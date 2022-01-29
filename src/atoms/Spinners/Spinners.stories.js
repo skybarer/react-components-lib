@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'components/Spinners/Basic',
+  title: 'atoms/Spinners/Basic',
   component: Spinners,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },
